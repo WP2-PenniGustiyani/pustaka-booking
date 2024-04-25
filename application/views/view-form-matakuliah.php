@@ -24,14 +24,16 @@ method="post">
                     <th>Kode MTK</th>
                     <th>:</th>
                     <td>
-                        <input type="text" name="kode" id="kode">
+                        <input type="text" name="kode" id="kode" placeholder="Required">
+                        <div class="col-sm-6 col-danger"><?= form_error('kode');?></div>
                     </td>
                 </tr>
                 <tr>
                     <th>Nama MTK</th>
                     <td>:</td>
                     <td>
-                        <input type="text" name="nama" id="nama">
+                        <input type="text" name="nama" id="nama" placeholder="Required">
+                        <div class="col-sm-6 col-danger"><?= form_error('kode');?></div>
                     </td>
                 </tr>
                 <tr>
