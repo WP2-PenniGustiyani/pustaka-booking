@@ -10,7 +10,7 @@ class Siswa extends CI_Controller
 
     public function cetak()
     {
-        $this->form_validation->set_rules('nama', 'Nama Siswa', 
+        $this->form_validation->set_rules('nama', 'Nama Siswa',
 'required|min_length[3]', [
  'required' => 'Nama Siswa Harus diisi',
  'min_lenght' => 'Nama terlalu pendek'
