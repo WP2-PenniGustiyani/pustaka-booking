@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-danger shadow h-100 py-2 bg-
-primary">
+primary" style="background-color: blue;">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
@@ -26,8 +26,8 @@ class="fas fa-users fa-3x text-warning"></i></a>
 
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-left-primary shadow h-100 py-2 bg-
-warning">
-                <div class="card-body">
+warning" style="background-color: yellow;">
+                <div class="card-body" >
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-md font-weight-bold text-white text-
@@ -51,25 +51,21 @@ book fa-3x text-primary"></i></a>
         </div>
 
         <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-success shadow h-100 py-2 bg-
-danger">
+            <div class="card border-left-success shadow h-100 py-2 bg-danger">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-md font-weight-bold text-white text-
-uppercase mb-1">Buku yang dipinjam</div>
+                            <div class="text-md font-weight-bold text-white text-uppercase mb-1">Buku yang dipinjam</div>
                             <div class="h1 mb-0 font-weight-bold text-white">
                                 <?php
                                 $where = ['dipinjam != 0'];
-                                $totaldipinjam = $this->ModelBuku->total('dipinjam', 
-$where);
+                                $totaldipinjam = $this->ModelBuku->total('dipinjam', $where);
                                 echo $totaldipinjam;
                                 ?>
                             </div>
                         </div>
                         <div class="col-auto">
-                            <a href="<?= base_url('user'); ?>"><i class="fas fa-
-user-tag fa-3x text-success"></i></a>
+                            <a href="<?= base_url('user'); ?>"><i class="fas fa-user-tag fa-3x text-success"></i></a>
                         </div>
                     </div>
                 </div>
@@ -77,13 +73,11 @@ user-tag fa-3x text-success"></i></a>
         </div>
 
         <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-warning shadow h-100 py-2 bg-
-success">
+            <div class="card border-left-warning shadow h-100 py-2 bg-success">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-md font-weight-bold text-white text-
-uppercase mb-1">Buku yang dibooking</div>
+                            <div class="text-md font-weight-bold text-white text-uppercase mb-1">Buku yang dibooking</div>
                             <div class="h1 mb-0 font-weight-bold text-white">
                                 <?php
                                 $where = ['dibooking !=0'];
@@ -93,8 +87,7 @@ uppercase mb-1">Buku yang dibooking</div>
                             </div>
                         </div>
                         <div class="col-auto">
-                            <a href="<?= base_url('user'); ?>"><i class="fas fa-
-shopping-cart fa-3x text-danger"></i></a>
+                            <a href="<?= base_url('user'); ?>"><i class="fas fa-shopping-cart fa-3x text-danger"></i></a>
                         </div>
                     </div>
                 </div>
@@ -108,14 +101,10 @@ shopping-cart fa-3x text-danger"></i></a>
 
     <!-- row table-->
     <div class="row">
-        <div class="table-responsive table-bordered col-sm-5 ml-auto mr-
-auto mt-2">
+        <div class="table-responsive table-bordered col-sm-5 ml-auto mr auto mt-2">
             <div class="page-header">
-                <span class="fas fa-users text-primary mt-2 "> Data 
-User</span>
-                <a class="text-danger" href="<?php echo 
-base_url('user/data_user'); ?>"><i class="fas fa-search mt-2 float-
-right"> Tampilkan</i></a>
+                <span class="fas fa-users text-primary mt-2 "> Data User</span>
+                <a class="text-danger" href="<?php echo base_url('user/data_user'); ?>"><i class="fas fa-search mt-2 float-right"> Tampilkan</i></a>
             </div>
             <table class="table mt-3">
                 <thead>
